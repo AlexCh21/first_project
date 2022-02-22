@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>>Файлы рабочей директории</title>
+</head>
+<body>
+    <h1>Список файлов в корневой папке:</h1>
+    <ul>
+    {% for x in file_list %}
+        <li style="color: blue">{{x}}</li>
+    {% endfor %}
+    </ul>
+<a href="/">Главная страница</a>
+</body>
+</html>
